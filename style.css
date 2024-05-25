@@ -1,0 +1,20 @@
+.box {
+  background-color: aliceblue;
+  color: red;
+  padding: 20px; /* Adds space inside the box, increasing the total size of the box by 20px on all sides */
+  border: 5px solid #000; /* border: Adds a 5px solid black border around the padding and content */
+  margin: 30px; /* Adds 30px of space outside the border, separating this box from other elements */
+  width: 300px; /* Width of the content area */
+  height: 100px; /* Height of the content area */
+  box-sizing: border-box; /* include padding and border in the width and height calculations,
+   which prevents the element from growing unexpectedly */
+  overflow: hidden; /* Content that overflows is hidden */
+  /* overflow: scroll;  Scroll bars will appear if needed 
+  overflow: auto;  Scroll bars will appear only if needed 
+  overflow: visible; Content will overflow outside the box */
+}
+
+/* Inline display for inner div */
+.box div {
+  display: inline; /* Change display to inline (By default div is block level element) */
+}
